@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Planner!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pad">
+        <div id="grid">
+
+            <div id="incomeBox">
+
+                <div id="incomeHeader">
+                    <h1 id="incomeTitle">Income</h1>
+                    <h2 id="expectedIncome">$1,500.00</h2>
+                    <h2 id="leftOverIncome">$500.00</h2>
+                </div>
+
+                <div id="incomeBody">
+                    <ul id="incomeData">
+
+                    </ul>
+                
+                    <input placeholder="Enter Income Type" type="text" name="" id="addIncomeType">
+                    <input placeholder="Enter Income Amount" type="text" name="" id="addIncomeAmt">
+                    <button id="addIncomeBtn" ><img class="plus" src="./images/plus sign 2.ico" alt=""></button>
+                    <div id="placeholder" class="placeholder"></div>
+                    
+                </div>
+            </div>
+
+            <div id="calendarBox">
+
+                <div id="calHeader">
+                    <h1 id="calTitle">January</h1>
+                    <h1 id="checkingTitle">Checking</h1>
+                    <h1 id="savingsTitle">Savings</h1>
+                    <h2 id="checkingBalance">$0.00</h2>
+                    <h2 id="savingsBalance">$0.00</h2>
+                    <img id="leftArrow" src="./images/leftarrow.svg" alt="">
+                    <img id="rightArrow" src="./images/rightarrow.svg" alt="">
+                </div>
+
+                <div id="calBody">
+                    
+
+                </div>
+
+                <div contenteditable="true" id="calFooter">
+                
+                </div>
+            </div>
+
+            <div id="expensesBox">
+
+                <div id="expenseHeader">
+                    <h1 id="expenseTitle">Expenses</h1>
+                    <h2 id="expectedExpenses">$0.00</h2>
+                </div>
+
+                <div id="expenseBody">
+                    <ul id="expenseData">
+
+                    </ul>
+                    <input placeholder="Enter Expense Type" type="text" name="" id="addExpenseType">
+                    <input placeholder="Enter Expense Amount" type="text" name="" id="addExpenseAmt">
+                    <button id="addExpenseBtn"><img class="plus" src="./images/plus sign 2.ico" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
